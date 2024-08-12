@@ -1,0 +1,28 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ToDoAppC40GSat" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorSecondary">@color/blue</item>
+    </style>
+
+    <style name="Theme.ToDoAppC40GSat" parent="Base.Theme.ToDoAppC40GSat">
+        <item name="android:statusBarColor">@color/black2_variant</item>
+    </style>
+
+    <style name="TodoBackground">
+        <item name="android:background">@color/black2</item>
+    </style>
+
+    <style name="DayBackground">
+        <item name="android:background">@drawable/day_bg_dark</item>
+    </style>
+
+    <style name="DayTextColor">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="BottomNavigationStyle">
+        <item name="android:background">@color/black3</item>
+    </style>
+</resources>
