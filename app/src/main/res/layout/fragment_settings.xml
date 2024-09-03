@@ -1,6 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:focusableInTouchMode="true">
+
+    <ImageView
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:src="@color/blue"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/settings"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginTop="24dp"
+        android:layout_marginHorizontal="32dp"/>
+
+    <TextView
+        android:id="@+id/language_title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_view"
+        android:text="@string/language"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:layout_marginTop="24dp"
+        android:layout_marginHorizontal="32dp">
+
+    </TextView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/language_tl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/language_title_tv"
+        android:layout_marginTop="24dp"
+        android:layout_marginHorizontal="32dp"
+        app:boxStrokeColor="@color/blue"
+        style="@style/dropDownList">
+
+        <AutoCompleteTextView
+            android:id="@+id/languages_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/language_list"
+            android:inputType="none"/>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/mode_title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/language_tl"
+        android:text="@string/mode"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:layout_marginTop="32dp"
+        android:layout_marginHorizontal="32dp">
+
+    </TextView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mode_title_tv"
+        android:layout_marginTop="24dp"
+        android:layout_marginHorizontal="32dp"
+        app:boxStrokeColor="@color/blue"
+        style="@style/dropDownList">
+
+        <AutoCompleteTextView
+            android:id="@+id/mode_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/mode_list"
+            android:inputType="none"/>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -25,4 +25,8 @@
     <style name="BottomNavigationStyle">
         <item name="android:background">@color/black3</item>
     </style>
+
+    <style name="dropDownList" parent="Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <item name="android:background">@color/black3</item>
+    </style>
 </resources>
